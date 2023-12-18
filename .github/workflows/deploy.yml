@@ -23,5 +23,7 @@ jobs:
             ./* => /www/hermango
           last_ssh: |
             cd /www/hermango
-            screen -dm pnpm install
-            screen -dm pnpm run deploy
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            pnpm install
+            pnpm run deploy
