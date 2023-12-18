@@ -28,4 +28,4 @@ jobs:
           SOURCE: "./"
           REMOTE_HOST:  ${{ secrets.ALI_SERVER_HOST }}
           REMOTE_USER: ${{ secrets.ALI_SERVER_USER }}
-          TARGET: "/root"
+          TARGET: "/root/hermango"
