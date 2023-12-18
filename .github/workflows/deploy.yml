@@ -17,10 +17,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Dependency
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8.12.1
       - name: Upload to Server
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
         with:
@@ -33,4 +29,4 @@ jobs:
           last_ssh: |
             cd /www/hermango
             pnpm install
-            pnpm deploy
+            pnpm run deploy
