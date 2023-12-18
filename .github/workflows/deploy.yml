@@ -28,3 +28,5 @@ jobs:
             ./* => /www/hermango
           last_ssh: |
             cd /www/hermango
+            pnpm install
+            pnpm deploy
