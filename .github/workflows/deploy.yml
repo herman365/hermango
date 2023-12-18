@@ -28,5 +28,5 @@ jobs:
             ./* => /www/hermango
           last_ssh: |
             cd /www/hermango
-            npm install
-            npm run deploy
+            screen -dm pnpm install
+            screen -dm pnpm run deploy
